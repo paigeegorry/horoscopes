@@ -4,6 +4,7 @@ import HoroscopeList from '../components/horoscopes/HoroscopeList';
 import PropTypes from 'prop-types';
 import { fetchScopes } from '../actions/horoscopes';
 import { getHoroscopes } from '../selectors/horoscopes';
+import HoroscopeForm from '../components/horoscopes/HoroscopeForm';
 
 class Horoscopes extends PureComponent {
   static propTypes = {
@@ -17,7 +18,10 @@ class Horoscopes extends PureComponent {
 
   render() {
     return (
-      <p>{this.props.horoscopes && this.props.horoscopes.horoscope}</p>
+      <>
+      <HoroscopeForm />
+      {this.props.horoscopes && <HoroscopeList horoscope={this.props.horoscopes} />}
+      </>
     );
   }
 }

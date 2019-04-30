@@ -1,13 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function HoroscopeList(horoscopes) {
-  console.log('horoscope', horoscopes);
+export default function HoroscopeList({ horoscope }) {
+  console.log('horoscope', horoscope);
   return (
-    <p>{horoscopes.horoscope}</p>
+    <>
+      <h2>{horoscope.sunsign} Horoscope</h2>
+      <h3>{horoscope.date}</h3>
+      <p>{horoscope.horoscope}</p>
+    </>
   );
 }
 
 HoroscopeList.propTypes = {
-  horoscopes: PropTypes.object
+  horoscope: PropTypes.object
 };
