@@ -10,7 +10,7 @@ export default function SortOptions({ options }) {
   return (
     <>
       {sortables}
-    </>
+      </>
   );
 }
 

@@ -1,5 +1,6 @@
-export const getHoroscopeInfo = () => {
+export const getHoroscopeInfo = (time, sign) => {
   /*eslint-disable-next-line*/
-  return fetch('https://cors-anywhere.herokuapp.com/http://horoscope-api.herokuapp.com/horoscope/today/Leo')
+  const realTime = time.toLowerCase();
+  return fetch(`https://cors-anywhere.herokuapp.com/http://horoscope-api.herokuapp.com/horoscope/${realTime}/${sign}`)
     .then(res => res.json());
 };

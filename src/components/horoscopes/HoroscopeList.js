@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 export default function HoroscopeList({ horoscope }) {
-  console.log('horoscope', horoscope);
   return (
     <>
       <h2>{horoscope.sunsign} Horoscope</h2>
