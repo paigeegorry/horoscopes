@@ -9,6 +9,7 @@ export default function Foot() {
         <a href="https://twitter.com/paigeegorry">Twitter</a>
         <a href="https://www.linkedin.com/in/paigeegorry/">LinkedIn</a>
         <a href="https://github.com/paigeegorry">Github</a>
+        <a href="https://github.com/tapaswenipathak/Horoscope-API">API Credit</a>
       </nav>
     </Footer>
   );
