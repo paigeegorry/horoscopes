@@ -6,9 +6,9 @@ export default function Foot() {
     <Footer>
       Connect with me:
       <nav>
-        <a href="">Twitter</a>
-        <a href="">LinkedIn</a>
-        <a href="">Github</a>
+        <a href="https://twitter.com/paigeegorry">Twitter</a>
+        <a href="https://www.linkedin.com/in/paigeegorry/">LinkedIn</a>
+        <a href="https://github.com/paigeegorry">Github</a>
       </nav>
     </Footer>
   );
